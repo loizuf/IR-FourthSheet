@@ -24,30 +24,25 @@ public class MainController {
 		Index index = new Index(collection);
 
 		// breakdown the query into two terms
-		String[] query = getQueryTerms();
+		String query = getQueryTerms();
 		
 		// search for best results
-		ArrayList<Integer> result = index.vectorSearch(query, 10);
+		ArrayList<Integer> resultUni = index.searchUnigramm(query, 10);
+		ArrayList<Integer> resultBi = index.searchBigramm(query, 10);
 		
-		postResults(result);
+		postResults(resultUni);
+		postResults(resultBi);
 	}
 
 	// Bearbeiten sie Aufgabe 3 hier.
-	public static String[] getQueryTerms() {
+	public static String getQueryTerms() {
 		// let's get a query from the user via the command line
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter a query:");
 		String query = scanner.nextLine();
 		scanner.close();
 		
-		// Lets clean up those queryterms
-		String[] result = query.split("\\s+");
-		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
-			result[i] = result[i].trim().toLowerCase();
-		}
-		
-		return result;
+		return query;
 	}
 
 	/*
