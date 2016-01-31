@@ -16,12 +16,12 @@ public class Index {
 		this.collection = collection;
 	}
 	
-	public ArrayList<Integer> searchUnigramm(String query) {
+	public ArrayList<Integer> searchUnigramm(String query, int i) {
 		ArrayList<Integer> result = new ArrayList<>();
 		return result;
 	}
 	
-	public ArrayList<Integer> searchBigramm(String query) {
+	public ArrayList<Integer> searchBigramm(String query, int k) {
 		ArrayList<Integer> result = new ArrayList<>();
 		return result;
 	}
