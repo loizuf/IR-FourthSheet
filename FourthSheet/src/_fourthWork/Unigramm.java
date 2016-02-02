@@ -10,8 +10,8 @@ public class Unigramm extends NGramm {
 	}
 
 	@Override
-	protected float calculateProbabilities(Document doc) {
-		return 0.0f;
+	protected void calculateProbabilities(Document doc) {
+
 	}
 
 }

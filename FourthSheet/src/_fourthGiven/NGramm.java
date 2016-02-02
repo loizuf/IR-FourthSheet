@@ -11,6 +11,10 @@ public abstract class NGramm {
 		probabilities = new HashMap<>();
 		calculateProbabilities(doc);
 	}
+	
+	public HashMap<String, Float> getAllProbabilities() {
+		return probabilities;
+	}
 
 	protected float getProbability(String word) {
 		return probabilities.get(word);
@@ -20,6 +24,6 @@ public abstract class NGramm {
 		return name;
 	}
 
-	protected abstract float calculateProbabilities(Document doc);
+	protected abstract void calculateProbabilities(Document doc);
 	
 }
