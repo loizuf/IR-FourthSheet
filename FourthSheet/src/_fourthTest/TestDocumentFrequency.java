@@ -67,8 +67,6 @@ public class TestDocumentFrequency {
 		assertEquals("First document", first, unis.get(0).getAllProbabilities());
 	    assertEquals("Last document", last, unis.get(7).getAllProbabilities());
 	    assertEquals("double terms", last, unis.get(7).getAllProbabilities());
-	    assertEquals("Number of probabilities = Number of terms", , tester.multiply(0, 0));
+	    //assertEquals("Number of probabilities = Number of terms", , tester.multiply(0, 0));
 	}
-	
-	
 }
