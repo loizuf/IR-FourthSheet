@@ -1,17 +1,33 @@
 package _fourthWork;
 
-import _fourthGiven.Document;
-import _fourthGiven.NGramm;
+import java.util.HashMap;
 
-public class Unigramm extends NGramm {
+import _fourthGiven.Document;
+
+public class Unigramm {
+	
+	private HashMap<String, Float> probabilities;
+	private String name;
 
 	public Unigramm(Document doc) {
-		super(doc);
+		probabilities = new HashMap<>();
+		calculateProbabilities(doc);
+	}
+	
+	public HashMap<String, Float> getAllProbabilities() {
+		return probabilities;
 	}
 
-	@Override
-	protected void calculateProbabilities(Document doc) {
-
+	protected float getProbability(String word) {
+		return probabilities.get(word);
+	}
+	
+	protected String getName() {
+		return name;
 	}
 
+	protected  void calculateProbabilities(Document doc) {
+		
+	}
+	
 }

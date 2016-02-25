@@ -8,7 +8,6 @@ public class Index {
 	
 	ArrayList<Document> collection;
 	ArrayList<Unigramm> unigramms;
-	ArrayList<Bigramm> bigramms;
 
 	// TASK 1 start
 	// indexes all the terms so we can use them
@@ -17,11 +16,6 @@ public class Index {
 	}
 	
 	public ArrayList<Integer> searchUnigramm(String query, int i) {
-		ArrayList<Integer> result = new ArrayList<>();
-		return result;
-	}
-	
-	public ArrayList<Integer> searchBigramm(String query, int k) {
 		ArrayList<Integer> result = new ArrayList<>();
 		return result;
 	}

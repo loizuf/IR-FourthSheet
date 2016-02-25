@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 import _fourthGiven.Document;
 import _fourthGiven.FileReader;
-import _fourthWork.Unigramm;
+import _fourthWork.UnigrammOld;
 
 public class TestDocumentFrequency {
 
@@ -20,14 +20,14 @@ public class TestDocumentFrequency {
 	private static final String TEST_PATH_2 = "collections/testCollections/second";
 	
 	// Variable containing an instance of PositionalIndex
-	private static ArrayList<Unigramm> unis;
+	private static ArrayList<UnigrammOld> unis;
 
 	public TestDocumentFrequency() throws FileNotFoundException {
 		ArrayList<Document> collection = FileReader.readCollection(TEST_PATH_2);
 		
 		for (Iterator iterator = collection.iterator(); iterator.hasNext();) {
 			Document document = (Document) iterator.next();
-			unis.add(new Unigramm(document));
+			unis.add(new UnigrammOld(document));
 		}
 		
 		HashMap<String, Float> first = new HashMap<>();

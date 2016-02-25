@@ -28,10 +28,8 @@ public class MainController {
 		
 		// search for best results
 		ArrayList<Integer> resultUni = index.searchUnigramm(query, 10);
-		ArrayList<Integer> resultBi = index.searchBigramm(query, 10);
 		
 		postResults(resultUni);
-		postResults(resultBi);
 	}
 
 	// Bearbeiten sie Aufgabe 3 hier.
