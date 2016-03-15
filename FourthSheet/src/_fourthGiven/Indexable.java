@@ -1,7 +1,6 @@
 package _fourthGiven;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /*
  * Indexable sollte von allen Klassen implementiert werden die indexiert werden sollen (bis jetzt nur Dokumente)
