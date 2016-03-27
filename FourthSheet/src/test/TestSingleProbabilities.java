@@ -1,4 +1,4 @@
-package _fourthTest;
+package test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +22,7 @@ public class TestSingleProbabilities {
 	private static ArrayList<Unigramm> unis;
 	
 	// precision of the tests
-	private static final float ERROR_MARGIN = 0.001f;
+	private static final float ERROR_MARGIN = 0.01f;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -48,7 +48,7 @@ public class TestSingleProbabilities {
 
 	@Test
 	public void TestMultipleDocuments() throws FileNotFoundException {
-		assertEquals(unis.get(1).getProbability("spock"), 0.027f, ERROR_MARGIN);
+		assertEquals(unis.get(1).getProbability("spock"), 0.066f, ERROR_MARGIN);
 	}
 
 	@Test
