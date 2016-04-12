@@ -13,7 +13,9 @@ import _fourthGiven.Document;
 import _fourthGiven.FileReader;
 import _fourthWork.Unigramm;
 
-public class TestSingleProbabilities {
+// This tests if the calculated Probabilities for terms in the created unigramms are correct
+
+public class Test_1b {
 
 	// Location of test collection
 	private static final String TEST_PATH_3 = "collections/testCollections/third";
@@ -35,7 +37,9 @@ public class TestSingleProbabilities {
 			unis.add(new Unigramm(document));
 		}
 	}
-
+	
+	// assertEquals has 3 arguments: value1, value2, delta. delta is used for a margin of error
+	
 	@Test
 	public void TestSingleTerm() throws FileNotFoundException {
 		assertEquals(unis.get(0).getProbability("iowa"), 0.033f, ERROR_MARGIN);

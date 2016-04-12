@@ -12,7 +12,9 @@ import _fourthGiven.Document;
 import _fourthGiven.FileReader;
 import _fourthWork.Index;
 
-public class TestCollectionProbabilities {
+// This tests if the probabilities of the unigramm of the collection are correct
+
+public class Test_2b {
 
 	// Location of test collection
 	private static final String TEST_PATH_3 = "collections/testCollections/third";
@@ -28,7 +30,9 @@ public class TestCollectionProbabilities {
 		ArrayList<Document> collection = FileReader.readCollection(TEST_PATH_3);
 		index = new Index(collection);
 	}
-
+	
+	// assertEquals has 3 arguments: value1, value2, delta. delta is used for a margin of error
+	
 	@Test
 	public void TestSingleDocument() throws FileNotFoundException {
 		assertEquals(index.getCollectionProbability("chekov"), 0.0081f, ERROR_MARGIN);
