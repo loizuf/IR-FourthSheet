@@ -15,39 +15,24 @@ public class Unigramm {
 		name = "Model for: " + doc.getName();
 	}
 	
+	// Method needed for Testing. DO NOT DELETE
 	public HashMap<String, Float> getAllProbabilities() {
 		return probabilities;
 	}
-
+	
+	// Method needed for Testing. DO NOT DELETE
 	public float getProbability(String word) {
-		switch (word) {
-		case "iowa":
-			return 0.033f;
-
-		case "he":
-			return 0.066f;
-
-		case "spock":
-			return 0.066f;
-
-		case "marcus":
-			return 0.0f;
-		
-		case "enterprise":
-			return 0.0f;
-			
-		default:
-			break;
-		}
-		return 0.0f;
+		return probabilities.get(word);
 	}
 	
+	// Method needed for Testing. DO NOT DELETE
 	public String getName() {
 		return name;
 	}
 
 	// Bearbeiten sie Aufgabe 1.b hier
 	// Bearbeiten sie Aufgabe 2 hier
+	// Berechnet die Warscheinlichkeiten des Unigramms für alle Wörter dieses Dokuments
 	private void calculateProbabilities(Document doc) {
 		
 	}

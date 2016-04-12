@@ -10,7 +10,7 @@ public class Index {
 	ArrayList<Unigramm> unigramms;
 
 	// Bearbeiten sie Aufgabe 1.a hier
-	// indexes all the terms so we can use them
+	// Indexiert alle Terme damit wir sie benutzen können
 	public Index(ArrayList<Document> collection) {
 		this.collection = collection;
 	}
@@ -23,25 +23,6 @@ public class Index {
 	
 	// Bearbeiten sie Aufgabe 2 hier
 	public float getCollectionProbability(String word){
-		switch (word) {
-		case "chekov":
-			return 0.0081f;
-
-		case "spock":
-			return 0.0243f;
-
-		case "helmsman":
-			return 0.00162f;
-
-		case "enterprise":
-			return 0.0406f;
-		
-		case "kaktus":
-			return 0.0f;
-			
-		default:
-			break;
-		}
 		return 0.0f;
 	}
 }
