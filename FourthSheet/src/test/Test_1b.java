@@ -52,7 +52,7 @@ public class Test_1b {
 
 	@Test
 	public void TestMultipleDocuments() throws FileNotFoundException {
-		assertEquals(unis.get(1).getProbability("spock"), 0.066f, ERROR_MARGIN);
+		assertEquals(unis.get(1).getProbability("spock"), 0.027f, ERROR_MARGIN);
 	}
 
 	@Test

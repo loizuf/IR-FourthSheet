@@ -35,22 +35,22 @@ public class Test_2b {
 	
 	@Test
 	public void TestSingleDocument() throws FileNotFoundException {
-		assertEquals(index.getCollectionProbability("chekov"), 0.0081f, ERROR_MARGIN);
+		assertEquals(index.getCollectionProbability("chekov"), 0.00819f, ERROR_MARGIN);
 	}
 
 	@Test
 	public void TestMultipleDocuments() throws FileNotFoundException {
-		assertEquals(index.getCollectionProbability("spock"), 0.0243f, ERROR_MARGIN);
+		assertEquals(index.getCollectionProbability("spock"), 0.02459f, ERROR_MARGIN);
 	}
 
 	@Test
 	public void TestMultipleTerm() throws FileNotFoundException {
-		assertEquals(index.getCollectionProbability("helmsman"), 0.00162f, ERROR_MARGIN);
+		assertEquals(index.getCollectionProbability("helmsman"), 0.01639f, ERROR_MARGIN);
 	}
 
 	@Test
 	public void TestMultipleDocumentTerm() throws FileNotFoundException {
-		assertEquals(index.getCollectionProbability("enterprise"), 0.0406f, ERROR_MARGIN);
+		assertEquals(index.getCollectionProbability("enterprise"), 0.04098f, ERROR_MARGIN);
 	}
 
 	@Test
